@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PH24 Platform</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+display:flex;
+background:#0f0f0f;
+color:white;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:230px;
+height:100vh;
+background:#141414;
+padding:25px;
+position:fixed;
+border-right:1px solid #222;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#ffb300;
+margin-bottom:40px;
+}
+
+.menu a{
+display:block;
+color:#ccc;
+text-decoration:none;
+padding:12px;
+margin-bottom:8px;
+border-radius:6px;
+}
+
+.menu a:hover{
+background:#222;
+color:#ffb300;
+}
+
+/* MAIN */
+
+.main{
+margin-left:230px;
+width:100%;
+}
+
+/* HEADER */
+
+.header{
+padding:18px 40px;
+background:#111;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #222;
+}
+
+.search{
+padding:10px;
+border:none;
+border-radius:6px;
+background:#1f1f1f;
+color:white;
+}
+
+/* FEATURED */
+
+.featured{
+padding:40px;
+background:linear-gradient(90deg,#111,#1a1a1a);
+}
+
+.featured h1{
+margin-bottom:10px;
+}
+
+.featured button{
+margin-top:15px;
+padding:10px 18px;
+background:#ffb300;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* GRID */
+
+.grid{
+padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+/* CARD */
+
+.card{
+background:#1a1a1a;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.thumb{
+height:140px;
+background:#333;
+}
+
+.card-body{
+padding:15px;
+}
+
+.card-body h3{
+font-size:16px;
+margin-bottom:5px;
+}
+
+.card-body p{
+font-size:13px;
+color:#aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">PH24</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Trending</a>
+<a href="#">Categories</a>
+<a href="#">Top Rated</a>
+<a href="#">Upload</a>
+<a href="#">Settings</a>
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+<h2>Dashboard</h2>
+<input class="search" placeholder="Search content...">
+</div>
+
+<div class="featured">
+
+<h1>Featured Content</h1>
+<p>Watch the most popular content on the platform.</p>
+<button>Watch Now</button>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="thumb"></div>
+<div class="card-body">
+<h3>Trending Video</h3>
+<p>
+<a href="http://565751.shop/">shop</a>
+<a href="http://565752.shop/">shop</a>
+<a href="http://565753.shop/">shop</a>
+<a href="http://565754.shop/">shop</a>
+<a href="http://565755.shop/">shop</a>
+<a href="http://565756.shop/">shop</a>
+<a href="http://565757.shop/">shop</a>
+<a href="http://565758.shop/">shop</a>
+<a href="http://565759.shop/">shop</a>
+<a href="http://565760.shop/">shop</a>
+<a href="http://565761.shop/">shop</a>
+<a href="http://565762.shop/">shop</a>
+<a href="https://565763.shop/">affordable makeup brands</a>
+<a href="https://hair-story.space/"></a>
+<a href=""></a></p>
+</div>
+</div>
+
+<div class="card">
+<div class="thumb"></div>
+<div class="card-body">
+<h3>New Upload</h3>
+<p>Recently added</p>
+</div>
+</div>
+
+<div class="card">
+<div class="thumb"></div>
+<div class="card-body">
+<h3>Top Rated</h3>
+<p>Highest rating</p>
+</div>
+</div>
+
+<div class="card">
+<div class="thumb"></div>
+<div class="card-body">
+<h3>Recommended</h3>
+<p>Suggested for you</p>
+</div>
+</div>
+
+<div class="card">
+<div class="thumb"></div>
+<div class="card-body">
+<h3>Most Viewed</h3>
+<p>Popular today</p>
+</div>
+</div>
+
+<div class="card">
+<div class="thumb"></div>
+<div class="card-body">
+<h3>Latest Upload</h3>
+<p>Fresh content</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
